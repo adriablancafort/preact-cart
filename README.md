@@ -8,7 +8,7 @@ Ecommerce Shopping Cart with Preact and Astro.js by leveraging Local Storage Bro
 - Products consumed through a REST API ([Fake Store API](https://fakestoreapi.com))
 - Select product quantity, add to cart, change product quantity in cart, remove product from cart functionalities.
 - Instantanious Subtotal and Number of items in the cart calculations.
-- Infinite Scroll with limita and offset pagination and load more button every x automatic loads.
+- Infinite Scroll with limit and offset pagination and load more button every x automatic loads.
 
 ## Technologies Used
 
