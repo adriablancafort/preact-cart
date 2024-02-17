@@ -1,0 +1,44 @@
+---
+import Cart from "../components/Cart";
+import Products from "../components/Products";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Nanostore Preact Cart</title>
+  </head>
+  <body>
+    <main style="display: flex;">
+      <div>
+        <h2>Products</h2>
+        <Products client:load />
+      </div>
+
+      <div>
+        <h2>Cart</h2>
+        <Cart client:load />
+      </div>
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  .skeleton {
+    background: linear-gradient(110deg, #f3f4f6 40%, #ffffff 50%, #f3f4f6 60%);
+    background-size: 200%;
+    background-position: right 50px top 0;
+    animation: skeleton-loading 1s ease infinite;
+  }
+
+  @keyframes skeleton-loading {
+    to {
+      background-position: left 50px top 0;
+    }
+  }
+</style>
